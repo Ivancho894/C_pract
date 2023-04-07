@@ -8,8 +8,9 @@ int main(){
     int sueldo = cantTrabajadas*210;
     if (sueldo > 2500){
         sueldo -= sueldo*0.35;
-        printf("El sueldo menos el seguro es %d");
-
+    }else{
+        sueldo -= 85;
     }
 
+        printf("El sueldo menos el seguro es %d");
 }
