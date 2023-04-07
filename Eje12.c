@@ -1,4 +1,4 @@
-#include <stdio.j>
+#include <stdio.h>
 
 
 int main(){
@@ -6,11 +6,11 @@ int main(){
     int b;
     int c;
     printf("Ingrese el primer numero: ");
-    scanf("%d",&a)
+    scanf("%d",&a);
     printf("Ingrese el segundo numero: ");
     scanf("%d",&b);
     printf("Ingrese el tercer numero: ");
     scanf("%d",&c);
-    int c = a+b+c;
-    printf("El resultado es: %d",c)
+    int d = a+b+c;
+    printf("El resultado es: %d",d);
 }
