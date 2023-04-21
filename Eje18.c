@@ -14,6 +14,6 @@ int main()
     {
         c += a;
     }
-    printf("%d multiplicado por %d es: %d",a ,b ,c,/n);
+    printf("%d multiplicado por %d es: %d",a ,b ,c);
     return 0;
 };
