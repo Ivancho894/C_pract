@@ -7,8 +7,8 @@ int main (){
     scanf("%d",&num);
     printf("\nEs divisible por: ");
     for (i=2;i<num;i++){
-        if (i%num==0){
-            printf("%d \n",i);
+        if (num%i==0){
+            printf("\n%d",i);
         }
         }
         return 0;
