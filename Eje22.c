@@ -8,11 +8,7 @@ int main(){
     if (a%3!=0){
         printf("El numero %d es no multiplo de 3 \n",a); nn
     }else {
-<<<<<<< HEAD
-        cont++;
-=======
-        cont ++;
->>>>>>> c581ec946cff4882689fafa0c3c292dbda206240
+        printf("El numero %d es multiplo de 3\n",a);
     }
     }
         printf("La cantidad de numeros  que son multiplo de 3 son %d\n",cont);

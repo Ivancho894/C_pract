@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main (){
-    int juan,maria,pj,pm,j;
-    j = 0;
+    int juan,maria,pj,pm;
     pm = 0;
     pj = 0;
 
@@ -16,29 +15,23 @@ int main (){
         if (juan==1){
             if (maria==2){
                 pm++;
-                j++;
             }
             if (maria==3){
                 pj++;
-                j++;
             }
         }else if (juan==2){
             if (maria==1){
                 pj++;
-                j++;
             }
             if (maria==3){
                 pm++;
-                j++;
             }
         }else{
             if (maria==1){
                 pm++;
-                j++;
             }
             if (maria==2){
                 pj++;
-                j++;
             }
             
 
