@@ -9,7 +9,7 @@ int main (){
     b=num%10;
     if (a<b){
         cont+=b-a;
-        printf("a= %d b= %d cont= %d \n",a,cont);
+        printf("a= %d b= %d cont= %d \n",a,b,cont);
     }
     a--;
     while (a!=0){
