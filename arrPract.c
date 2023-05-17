@@ -2,18 +2,20 @@
 int main(){
     int arrLength,num;
     num=-1;
-    printf("Ingrese el tamano del array: ");
-    scanf("%d",&arrLength);
-
+    do{
+        printf("Ingrese el tamano del array: ");
+        scanf("%d",&arrLength);
+    }while(arrLength<=0);
+    arrLength--;
     int arr[arrLength];
     for (int e = 0; e<=arrLength;e++){
-        printf("Ingrese el valor de la posicion %d: ",e);
+        printf("Ingrese el valor de la posicion %d: ",e+1);
         scanf("%d",&arr[e]);
     }
     do{
-
+        printf("El array es:");
         for (int j = 0;j<=arrLength;j++){
-            printf(" %d",arr[j]);
+            printf(" %d,",arr[j]);
             }
 
         printf("\n-Ingrese 0 para salir.\n");
@@ -21,6 +23,7 @@ int main(){
         printf("-Ingrese 2 para sacar mayor.\n");
         printf("-Ingrese 3 para sacar menor.\n");
         printf("-Ingrese 4 para sacar suma.\n");
+        printf("-Ingrese 5 para crear nuevo array.\n");
         scanf("%d",&num);
 
 
@@ -53,9 +56,23 @@ int main(){
                 }
              printf("La suma de todos los numeros es %d.\n",sum);
         }
+        else if (num==5)
+        {
+            do{
+                printf("Ingrese el tamano del array: ");
+                scanf("%d",&arrLength);
+            }while(arrLength<=0);
+            arrLength--;
+            int arr[arrLength];
+            for (int e = 0; e<=arrLength;e++){
+                printf("Ingrese el valor de la posicion %d: ",e+1);
+                scanf("%d",&arr[e]);
+            }
+        }
+        
 
     }while (num!=0);
-    prinf("Chau");
+    printf("Chau\n");
     return 0;
 
 }
