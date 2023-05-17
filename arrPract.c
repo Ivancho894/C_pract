@@ -1,35 +1,4 @@
 #include <stdio.h>
-/*int printear(arra,arrLen){
-    int j;
-    for (j = 0;j<=arrLen;j++){
-        printf(" %d",arra[j]);
-    }
-    printf("\n");
-    return 0;
-}
-int promedio(arra,arrL){
-    int men = arr[0];
-    for (int j = 0;j<=arrL;j++){
-        if (arra[j]<men){
-            men = arr[j];
-        }
-        prinf("El menor valor del array es: %d",men);
-        return 0
-    
-    }
-
-
-}
-int mayor(arr,arrL){}
-int menor(arr,arrL){}
-int sumar(arr,arrL){
-    int sum = 0;
-    for (int j = 0;j<=arrL;j++){
-        sum+=arr[j];
-    }
-    prinf("La suma de todos los numeros es %d.",sum);
-    return 0;
-}*/
 int main(){
     int arrLength,num;
     num=-1;
@@ -42,7 +11,7 @@ int main(){
         scanf("%d",&arr[e]);
     }
     do{
-    //    printear(arr,arrLength);
+
         for (int j = 0;j<=arrLength;j++){
             printf(" %d",arr[j]);
             }
