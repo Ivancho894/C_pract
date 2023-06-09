@@ -8,7 +8,7 @@
 int main(){
     char a;
     char elementos[T];
-    char letra[2];
+    char letra[45];
 
     for(int i=0; i<T;i++){
         printf("Ingrese una letra:");
