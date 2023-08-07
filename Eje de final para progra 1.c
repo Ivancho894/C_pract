@@ -14,12 +14,14 @@ int main(){
 
         for (int i = 1;i<=num;i++){
             for (int j = 1;j<=num;j++){
-                printf("%d   ",j*i);
+                printf("%d     ",j*i);
             }
             printf("\n");
 
         }
-        printf("Queres haceer otra tabla 1 o 0: ");
-        scanf("%d",&seguimos);
-        }
-}
+        do{
+            printf("Queres haceer otra tabla 1 o 0: ");
+            scanf("%d",&seguimos);
+        }while(seguimos != 0 && seguimos != 1);
+    }
+}      
