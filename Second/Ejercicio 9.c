@@ -1,24 +1,27 @@
 //Ejercicio 9.
 //Hecho por Ivan Serralta 25-08-23
 #include <stdio.h>
+#include <ctype.h>
 #define tam 100
 
 char cargarVec(char vec[]){
-    // int j = 0;
-    // do{
-        printf("Ingrese la frase a trabajar: ");
-        scanf("%s",&vec[]);
-    // }while(vec[j]!='*');
-    return vec[];
+    printf("Ingrese la frase a trabajar: ");
+    fgets(vec,tam,stdin);
+    return vec;
 }
 
 int contar(char vec[]){
-    char men = vec[0].toUpperCase;
-    int cant = 0;
+    char men = toupper(vec[0]);
+    int cont = 0;
+    char letra;
 
     for (int i = 1; tam>=i; i++){
-        letra=vec[i].toUpperCase;
+        if (vec[i]){
+            printf("%c",vec[i]);
+        }
+        letra=toupper(vec[0]);
         if (men == letra){
+        
             cont++;
         }else if(men>letra){
             men = letra;
@@ -26,14 +29,14 @@ int contar(char vec[]){
         }
 
     }
-    prinf("La menor letra es: %s y esta %d veces",men,cont);
+    printf("La menor letra es: %c y esta %d veces",men,cont);
     return 0;
 
 }
 
 
 int main(){
-    char frase[tam];
-    cargarVec(vec);
-    contar(vec);   
+    char frase[tam]='.';
+    cargarVec(frase);
+    contar(frase);   
 }
