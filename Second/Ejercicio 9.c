@@ -16,9 +16,9 @@ int contar(char vec[]){
     char letra;
 
     for (int i = 1; tam>=i; i++){
-        if (vec[i]){
-            printf("%c",vec[i]);
-        }
+        // if (vec[i]){
+        //     printf("%c",vec[i]);
+        // }
         letra=toupper(vec[0]);
         if (men == letra){
         

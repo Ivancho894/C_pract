@@ -19,7 +19,7 @@ void calcular(int tam){
         }
     }
 
-    for (int i = 0;i<tam;i++){
+    for (int i = 0; i<tam;i++){
         printf("\n");
         for (int j = 0;j<tam;j++){
             printf("%3d\t",matriz[i][j]);
